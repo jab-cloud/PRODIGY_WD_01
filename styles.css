@@ -4,29 +4,48 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#navMenu {
-position: fixed;
-top: 0;
+nav {
+position: sticky;
+top: 0px;
 left: 0;
 right: 0;
-background-color: #333;
+width: 100%;
+background-color: #2ed71f;
 display: flex;
 justify-content: space-around;
 align-items: center;
-height: 50px;
+height: 60px;
 padding: 0 20px;
 box-sizing: border-box;
 z-index: 1000;
+transition: all .5s ease;
 }
 
 
-#navMenu a {
-    color: #fff;
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+   margin: 10px;
+}
+nav ul li a {
     text-decoration: none;
-    padding: 6px 8px;
-    transition: background-color 0.3s, color 0.3s;
+    color: rgb(90, 79, 159);
+    font-weight: 800;
 }
-#navMenu a:hover {
-    background-color: #111;
-    color: #fff;
+nav ul li a:hover {
+    color: blue;
 }
+nav ul li a:active {
+    color: rgb(225, 216, 216)
+}
+.content-wrapper{
+    padding: 50px;
+    width: 100%;
+    height: 2000px;
+    margin: 0 auto;
+    /* position: ; */
+    background-image: linear-gradient(to bottom, rgb(209, 209, 199), rgb(174, 7, 157));
+}
+
